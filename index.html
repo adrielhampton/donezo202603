@@ -13,8 +13,9 @@
   /* Google Translate overrides */
   .goog-te-banner-frame { display: none !important; }
   body { top: 0 !important; }
-  .goog-te-gadget-simple { background: transparent !important; border: none !important; padding: 0 !important; }
-  .goog-te-gadget-simple span, .goog-te-gadget-simple a { color: rgba(255,255,255,0.8) !important; font-family: 'Public Sans', sans-serif !important; font-size: 13px !important; font-weight: 700 !important; letter-spacing: 0.05em !important; text-transform: uppercase !important; text-decoration: none !important; }
+  .goog-te-gadget-simple { background: transparent !important; border: none !important; padding: 0 !important; white-space: nowrap !important; display: inline-flex !important; align-items: center !important; gap: 2px !important; }
+  .goog-te-gadget-simple span, .goog-te-gadget-simple a { color: rgba(255,255,255,0.8) !important; font-family: 'Public Sans', sans-serif !important; font-size: 13px !important; font-weight: 700 !important; letter-spacing: 0.05em !important; text-transform: uppercase !important; text-decoration: none !important; display: inline !important; vertical-align: middle !important; }
+  .goog-te-gadget-simple img { vertical-align: middle !important; display: inline !important; }
   .goog-te-gadget-icon { display: none !important; }
 
   /* One-pager specific styles */
@@ -180,7 +181,6 @@ function googleTranslateElementInit() {
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links">
-    <li><a href="#act">Join Us</a></li>
     <li><a href="#bumper">Bumper Sticker</a></li>
     <li><a href="#map">Map</a></li>
     <li><a href="#movement">Find Your People</a></li>
@@ -205,7 +205,6 @@ function googleTranslateElementInit() {
       <a href="#act" class="btn btn-red">Add My Name</a>
       <a href="#bumper" class="btn btn-ghost">Get a Bumper Sticker</a>
     </div>
-    <p class="hero-counter">Millions of Americans are taking action — join us</p>
   </div>
 </section>
 
@@ -343,58 +342,7 @@ function googleTranslateElementInit() {
       <p>Millions of Americans are already fighting back — in courts, on street corners, and at the ballot box. Find the group that fits how you want to fight.</p>
     </div>
 
-    <!-- Legal Fight -->
-    <div class="track-label">Legal Fight</div>
-    <div class="org-grid" style="margin-bottom: 40px;">
-      <div class="org-card">
-        <div class="org-name">ACLU</div>
-        <div class="org-desc">Suing over warrantless arrests, Operation Metro Surge, and the 287(g) expansion turning local police into ICE agents. Fighting in every state.</div>
-        <a href="https://www.aclu.org/know-your-rights/immigrants-rights" target="_blank" rel="noopener" class="org-link">Know Your Rights &rarr;</a>
-      </div>
-      <div class="org-card">
-        <div class="org-name">RAICES</div>
-        <div class="org-desc">Free legal defense for immigrants facing deportation. Suing the Trump administration over the asylum shutdown. On the front lines in Texas and beyond.</div>
-        <a href="https://www.raicestexas.org" target="_blank" rel="noopener" class="org-link">raicestexas.org &rarr;</a>
-      </div>
-      <div class="org-card">
-        <div class="org-name">Detention Watch Network</div>
-        <div class="org-desc">Tracking every person in ICE detention — over 70,000 as of early 2026. Running the Communities Not Cages campaign and connecting local organizers nationwide.</div>
-        <a href="https://www.detentionwatchnetwork.org" target="_blank" rel="noopener" class="org-link">detentionwatchnetwork.org &rarr;</a>
-      </div>
-      <div class="org-card">
-        <div class="org-name">Center for Constitutional Rights</div>
-        <div class="org-desc">Decades of litigation against ICE overreach. Using FOIA and federal courts to expose what ICE does in secret and force accountability.</div>
-        <a href="https://ccrjustice.org" target="_blank" rel="noopener" class="org-link">ccrjustice.org &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Community Defense -->
-    <div class="track-label">Community Defense</div>
-    <div class="org-grid" style="margin-bottom: 40px;">
-      <div class="org-card">
-        <div class="org-name">Siembra NC</div>
-        <div class="org-desc">24-hour ICE defense hotline. Trained driver-verifiers creating ICE-Free Zones. Know Your Rights trainings in counties across North Carolina — a replicable model for anywhere.</div>
-        <a href="https://www.siembranc.org" target="_blank" rel="noopener" class="org-link">siembranc.org &rarr;</a>
-      </div>
-      <div class="org-card">
-        <div class="org-name">NDLON</div>
-        <div class="org-desc">National Day Laborer Organizing Network. Running "Adopt a Day Labor Corner" to protect immigrant workers and shield communities from ICE. Building from the ground up.</div>
-        <a href="https://ndlon.org" target="_blank" rel="noopener" class="org-link">ndlon.org &rarr;</a>
-      </div>
-      <div class="org-card">
-        <div class="org-name">Whistlemania</div>
-        <div class="org-desc">120,000+ whistles distributed in Chicago. Neighbors blowing the whistle — literally — when ICE arrives. Now spreading to Minneapolis, Denver, Atlanta, and St. Louis.</div>
-        <a href="https://blockclubchicago.org/2025/11/05/from-chicago-to-la-neighborly-solidarity-fuels-resistance-to-ice/" target="_blank" rel="noopener" class="org-link">Read the story &rarr;</a>
-      </div>
-      <div class="org-card">
-        <div class="org-name">Americans for Tax Fairness</div>
-        <div class="org-desc">Exposing the corporations getting rich off concentration camps. "ICE Corporate Collaborators: Exposed" names the companies taking your tax dollars to build Trump's Gestapo.</div>
-        <a href="https://americansfortaxfairness.org" target="_blank" rel="noopener" class="org-link">americansfortaxfairness.org &rarr;</a>
-      </div>
-    </div>
-
-    <!-- National Organizing -->
-    <div class="track-label">National Organizing</div>
+    <!-- Four key organizations -->
     <div class="org-grid">
       <div class="org-card">
         <div class="org-name">Indivisible</div>
@@ -412,9 +360,9 @@ function googleTranslateElementInit() {
         <a href="https://www.50501.com" target="_blank" rel="noopener" class="org-link">50501.com &rarr;</a>
       </div>
       <div class="org-card">
-        <div class="org-name">National Coalition to Stop Avelo</div>
-        <div class="org-desc">Won. A year-long "mosquito strategy" — targeting Avelo's investors, subsidies, and reputation — forced the airline to end its deportation flights in January 2026. A model for what works.</div>
-        <a href="https://truthout.org/articles/heres-how-to-find-out-which-corporations-are-collaborating-with-ice/" target="_blank" rel="noopener" class="org-link">Read how they won &rarr;</a>
+        <div class="org-name">NDLON</div>
+        <div class="org-desc">National Day Laborer Organizing Network. Running "Adopt a Day Labor Corner" to protect immigrant workers and shield communities from ICE. Building from the ground up.</div>
+        <a href="https://ndlon.org" target="_blank" rel="noopener" class="org-link">ndlon.org &rarr;</a>
       </div>
     </div>
   </div>
@@ -428,6 +376,7 @@ function googleTranslateElementInit() {
     <span class="kicker">About This Campaign</span>
     <p>Stop ICE is a campaign sponsored by <a href="https://democrats.com" target="_blank" rel="noopener">Democrats.com</a>, one of the oldest and largest progressive online political organizations in America. Democrats.com has been mobilizing Democratic voters and holding politicians accountable since 1999.</p>
     <p>We have one goal: demand Congress repeal and replace ICE. Not negotiate it. Not reform it. <strong>Repeal and replace — as many times as it takes.</strong></p>
+    <p style="margin-top: 8px;"><a href="https://actionnetwork.org/forms/stop-ice-pac-partner-form/" target="_blank" rel="noopener" style="font-weight: 700;">Want to partner with StopICE.Vote? Get in touch &rarr;</a></p>
   </div>
 </div>
 
@@ -487,7 +436,7 @@ function googleTranslateElementInit() {
 
 <!-- Cookie consent -->
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
-  <p>This site uses cookies for analytics. See our <a href="privacy.html">Privacy Policy</a>. California residents: we do not sell personal data.</p>
+  <p>This site uses cookies for analytics. See our <a href="privacy.html">Privacy Policy</a> and the <a href="https://web.democrats.com/privacy/" target="_blank" rel="noopener">Democrats.com Privacy Policy</a>.</p>
   <button class="cookie-accept" onclick="acceptCookies()">Got it</button>
 </div>
 <script>
