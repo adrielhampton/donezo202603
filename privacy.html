@@ -10,8 +10,9 @@
 <style>
   .goog-te-banner-frame { display: none !important; }
   body { top: 0 !important; }
-  .goog-te-gadget-simple { background: transparent !important; border: none !important; padding: 0 !important; }
-  .goog-te-gadget-simple span, .goog-te-gadget-simple a { color: rgba(255,255,255,0.8) !important; font-family: 'Public Sans', sans-serif !important; font-size: 13px !important; font-weight: 700 !important; letter-spacing: 0.05em !important; text-transform: uppercase !important; text-decoration: none !important; }
+  .goog-te-gadget-simple { background: transparent !important; border: none !important; padding: 0 !important; white-space: nowrap !important; display: inline-flex !important; align-items: center !important; gap: 2px !important; }
+  .goog-te-gadget-simple span, .goog-te-gadget-simple a { color: rgba(255,255,255,0.8) !important; font-family: 'Public Sans', sans-serif !important; font-size: 13px !important; font-weight: 700 !important; letter-spacing: 0.05em !important; text-transform: uppercase !important; text-decoration: none !important; display: inline !important; vertical-align: middle !important; }
+  .goog-te-gadget-simple img { vertical-align: middle !important; display: inline !important; }
   .goog-te-gadget-icon { display: none !important; }
 </style>
 <script type="text/javascript">
@@ -45,20 +46,19 @@ function googleTranslateElementInit() {
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links">
-    <li><a href="index.html#act">Join Us</a></li>
     <li><a href="index.html#bumper">Bumper Sticker</a></li>
     <li><a href="index.html#map">Map</a></li>
     <li><a href="index.html#movement">Find Your People</a></li>
     <li><a href="index.html#act" class="nav-cta">Add My Name</a></li>
     <li><a href="https://secure.actblue.com/donate/stop-ice-1" class="nav-cta nav-support" target="_blank" rel="noopener">Fund the Fight</a></li>
-  
-    <li id="google_translate_element" style="display:flex;align-items:center;"></li>
+    <li id="google_translate_element" style="position:absolute;opacity:0;pointer-events:none;height:0;overflow:hidden;"></li>
+    <li><a href="#" onclick="triggerSpanish();return false;" style="color:rgba(255,255,255,0.75);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">En Español</a></li>
   </ul>
 </nav>
 
 <div class="page-hero" style="padding: 44px 24px 36px;">
   <h1 style="font-size: clamp(24px, 3.5vw, 36px);">Privacy Policy</h1>
-  <p style="font-size: 14px; margin-top: 8px; color: rgba(255,255,255,0.6);">Last updated: March 9, 2026</p>
+  <p style="font-size: 14px; margin-top: 8px; color: rgba(255,255,255,0.6);">Last updated: March 18, 2026</p>
 </div>
 
 <div class="content-section">
@@ -79,13 +79,13 @@ function googleTranslateElementInit() {
   <p>Action Network, our petition platform, may set its own cookies. See <a href="https://actionnetwork.org/privacy" target="_blank" rel="noopener" style="color: var(--red);">actionnetwork.org/privacy</a> for their policy.</p>
 
   <h2 style="margin-top: 36px;">Your Rights</h2>
-  <p>You may unsubscribe from our emails at any time by clicking the unsubscribe link in any email we send. To request that we delete your personal data, <a href="https://actionnetwork.org/forms/stop-ice-pac-partner-form/" target="_blank" rel="noopener" style="color: var(--red);">contact us here</a>.</p>
+  <p>You may unsubscribe from our emails at any time by clicking the unsubscribe link in any email we send. To request that we delete your personal data, <a href="https://web.democrats.com/contact/" target="_blank" rel="noopener" style="color: var(--red);">contact us here</a>.</p>
 
   <h2 style="margin-top: 36px;">California Residents</h2>
-  <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including the right to know what personal information we have collected, the right to delete it, and the right to opt out of its sale. For details on how data is handled, see the <a href="https://web.democrats.com/privacy/" target="_blank" rel="noopener" style="color: var(--red);">Democrats.com Privacy Policy</a>. To exercise your rights, <a href="https://actionnetwork.org/forms/stop-ice-pac-partner-form/" target="_blank" rel="noopener" style="color: var(--red);">contact us here</a>.</p>
+  <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including the right to know what personal information we have collected, the right to delete it, and the right to opt out of its sale. For details on how data is handled, see the <a href="https://web.democrats.com/privacy/" target="_blank" rel="noopener" style="color: var(--red);">Democrats.com Privacy Policy</a>. To exercise your rights, <a href="https://web.democrats.com/contact/" target="_blank" rel="noopener" style="color: var(--red);">contact us here</a>.</p>
 
   <h2 style="margin-top: 36px;">Contact</h2>
-  <p>Questions about this privacy policy? <a href="https://actionnetwork.org/forms/stop-ice-pac-partner-form/" target="_blank" rel="noopener" style="color: var(--red);">Contact us here</a>.</p>
+  <p>Questions about this privacy policy? <a href="https://web.democrats.com/contact/" target="_blank" rel="noopener" style="color: var(--red);">Contact us here</a>.</p>
   <p style="margin-top: 20px; font-size: 14px; color: var(--text-light);">Stop ICE · stopice.vote · A project of Democrats.com LLC. Not authorized by any candidate or candidate's committee.</p>
 </div>
 
@@ -120,4 +120,25 @@ function googleTranslateElementInit() {
   <p>This site uses cookies for analytics. See our <a href="privacy.html">Privacy Policy</a> and the <a href="https://web.democrats.com/privacy/" target="_blank" rel="noopener">Democrats.com Privacy Policy</a>.</p>
   <button class="cookie-accept" onclick="acceptCookies()">Got it</button>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudfla
+<script>
+(function(){
+  if(navigator.globalPrivacyControl || navigator.doNotTrack === '1'){
+    document.getElementById('cookieBanner').style.display = 'none';
+    return;
+  }
+  if(localStorage.getItem('cookieConsent') === 'true'){
+    document.getElementById('cookieBanner').style.display = 'none';
+  }
+})();
+function acceptCookies(){
+  localStorage.setItem('cookieConsent','true');
+  document.getElementById('cookieBanner').style.display = 'none';
+}
+function triggerSpanish(){
+  var sel = document.querySelector('#google_translate_element select');
+  if(sel){ sel.value = 'es'; sel.dispatchEvent(new Event('change')); }
+}
+</script>
+
+</body>
+</html>
