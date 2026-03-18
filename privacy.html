@@ -51,8 +51,7 @@ function googleTranslateElementInit() {
     <li><a href="index.html#movement">Find Your People</a></li>
     <li><a href="index.html#act" class="nav-cta">Add My Name</a></li>
     <li><a href="https://secure.actblue.com/donate/stop-ice-1" class="nav-cta nav-support" target="_blank" rel="noopener">Fund the Fight</a></li>
-    <li id="google_translate_element" style="position:absolute;opacity:0;pointer-events:none;height:0;overflow:hidden;"></li>
-    <li><a href="#" onclick="triggerSpanish();return false;" style="color:rgba(255,255,255,0.75);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;">En Español</a></li>
+    <li id="google_translate_element" style="display:flex;align-items:center;"></li>
   </ul>
 </nav>
 
@@ -86,7 +85,6 @@ function googleTranslateElementInit() {
 
   <h2 style="margin-top: 36px;">Contact</h2>
   <p>Questions about this privacy policy? <a href="https://web.democrats.com/contact/" target="_blank" rel="noopener" style="color: var(--red);">Contact us here</a>.</p>
-  <p style="margin-top: 20px; font-size: 14px; color: var(--text-light);">Stop ICE · stopice.vote · A project of Democrats.com LLC. Not authorized by any candidate or candidate's committee.</p>
 </div>
 
 <footer class="site-footer">
@@ -117,7 +115,7 @@ function googleTranslateElementInit() {
 
 
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
-  <p>This site uses cookies for analytics. See our <a href="privacy.html">Privacy Policy</a> and the <a href="https://web.democrats.com/privacy/" target="_blank" rel="noopener">Democrats.com Privacy Policy</a>.</p>
+  <p>This site uses cookies for functionality. See our <a href="privacy.html">Privacy Policy</a> and the <a href="https://web.democrats.com/privacy/" target="_blank" rel="noopener">Democrats.com Privacy Policy</a>.</p>
   <button class="cookie-accept" onclick="acceptCookies()">Got it</button>
 </div>
 <script>
@@ -133,10 +131,6 @@ function googleTranslateElementInit() {
 function acceptCookies(){
   localStorage.setItem('cookieConsent','true');
   document.getElementById('cookieBanner').style.display = 'none';
-}
-function triggerSpanish(){
-  var sel = document.querySelector('#google_translate_element select');
-  if(sel){ sel.value = 'es'; sel.dispatchEvent(new Event('change')); }
 }
 </script>
 
